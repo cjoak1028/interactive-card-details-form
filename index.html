@@ -6,31 +6,44 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="./css/styles.css">
 
-  <title>Frontend Mentor | Interactive card details form</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <title>Interactive card details form</title>
 </head>
 
 <body>
-  <h1>Hello!</h1>
+  <img src="./images/bg-main-mobile.png" class="bg-mobile">
+  <img src="./images/bg-main-desktop.png" class="bg-desktop">
+
+  <div class="container">
+    <section class="section-card">
+      <div class="card-back">
+        <img src="./images/bg-card-back.png" alt="back of card" class="card-back__img">
+        <p class="card-back__cvc">000</p>
+      </div>
+      <div class="card-front">
+        <img src="./images/bg-card-front.png" alt="front of card" class="card-front__img">
+        <img src="./images/card-logo.svg" alt="card logo" class="card-front__logo">
+        <div class="card-front__details">
+          <p class="card-front__number">0000 0000 0000 0000</p>
+          <p class="card-front__cardholder">Jane Appleseed</p>
+          <p class="card-front__expiry">00/00</p>
+        </div>
+      </div>
+    </section>
+    <section class="section-form">
+      <form action="" method="post" class="card-form">
+        <label for="cardholder-name">Cardholder Name</label>
+        <input type="text" id="cardholder-name" name="cardholder_name">
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" name="card_number">
+      </form>
+    </section>
+  </div>
 </body>
 
 </html>
