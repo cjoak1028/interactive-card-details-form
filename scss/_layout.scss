@@ -1,4 +1,40 @@
+.bg-mobile {
+    width: 100%;
+    height: auto;
+}
+
 .container {
     display: flex;
     flex-direction: column;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.section-card {
+    color: blue;
+    background-color: red;
+}
+
+.card-back {
+    width: 80%;
+    float: right;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.card-front {
+    width: 80%;
+    float: left;
+
+    &__img {
+        width: 100%;
+    }
+}
+
+.section-form {
+    color: red;
+    background-color: blue;
 }
